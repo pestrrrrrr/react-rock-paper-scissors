@@ -1,13 +1,113 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: 10px;
+}
+.header {
+  margin-top: 20px;
+  max-width: 800px;
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.battlefield {
+  margin-top: 20px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.battlefield input, .overlay .card button {
+  background: black;
+  color: white;
+  height: 35px;
+  width: 70px;
+  border-radius: 5px;
+  border: transparent;
+  text-align: center;
+}
+.battlefield .buttons {
+  display: flex;
+  justify-content: center;
+  margin-block: 20px;
+}
+.battlefield .playground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+.battlefield .playground img {
+  height: 50px;
+  margin-inline: 70px;
+}
+.battlefield hr, .overlay .card hr {
+  width: 100%;
+  max-width: 750px;
+}
+.battlefield .buttons .reset {
+  background: rgb(255, 61, 61);
+  width: 100px;
+}
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.results {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.overlay {
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.overlay .card{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: white;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 15px;
+  margin-inline: 10px;
+}
+.overlay .card input{
+  margin-right: 10px;
+  height: 30px;
+  width: 200px;
+  border: solid black 0.5px;
+  border-radius: 5px;
+}
+.overlay .card .name-and-score{
+  display: flex;
+  justify-content: center;
 }
